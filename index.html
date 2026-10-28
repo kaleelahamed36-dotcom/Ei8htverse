@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ei8htverse | Pipe cleaner crafts, charms &amp; jewellery</title>
+  <meta name="description" content="ei8htverse: handmade pipe cleaner art and crafts, keychains, flowers, home decor, phone charms and jewellery. Little details, your kind of magic.">
+  <meta name="theme-color" content="#FDE6EC">
+
+  <!-- Open Graph (replace the image URL with your hosted address when you go live) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ei8htverse">
+  <meta property="og:title" content="ei8htverse | Pipe cleaner crafts, charms &amp; jewellery">
+  <meta property="og:description" content="Little details. Your kind of magic.">
+  <meta property="og:image" content="assets/ei8htverse-logo.png">
+
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+
+  <!-- Fonts: elegant serif for headings, clean sans for the interface -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     SVG ICON SPRITE (referenced with <use href="#i-name">)
+     ============================================================ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></symbol>
+    <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4.5 4.2-6.5 8-6.5s7 2 8 6.5"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.5C5 15.3 3.2 11.8 3.2 8.8A4.6 4.6 0 0 1 12 6.6a4.6 4.6 0 0 1 8.8 2.2c0 3-1.8 6.5-8.8 11.7z"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M5.5 8h13l-1 12.5h-11z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".8" fill="currentColor"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></symbol>
+    <symbol id="i-chev-left" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M9 7V4.5h6V7M6.5 7l1 13h9l1-13M10 11v6M14 11v6"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-eye-off" viewBox="0 0 24 24"><path d="M2.5 12S6 5.5 12 5.5 21.5 12 21.5 12 18 18.5 12 18.5 2.5 12 2.5 12z"/><circle cx="12" cy="12" r="3"/><path d="M4 4l16 16"/></symbol>
+    <symbol id="i-edit" viewBox="0 0 24 24"><path d="M4 20l1-4L16.5 4.5a2 2 0 0 1 3 3L8 19z"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6h16M7 12h10M10 18h4"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip-link" href="#main" id="skipLink">Skip to content</a>
+
+<!-- ============================================================
+     ANNOUNCEMENT BAR (text comes from CONFIG.announcement)
+     ============================================================ -->
+<div class="announce"><p id="announceText"></p></div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+      <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>
+    </button>
+
+    <a class="logo-link" href="#/" aria-label="ei8htverse home">
+      <img class="logo" src="assets/ei8htverse-logo.png" alt="ei8htverse" width="792" height="653">
+      <span class="logo-fallback" hidden>ei8htverse</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#/shop" data-nav>Shop</a>
+      <a href="#/shop?flag=new" data-nav>New Arrivals</a>
+      <a href="#/shop?flag=best" data-nav>Bestsellers</a>
+      <a href="#/shop?cat=Charms" data-nav>Charms</a>
+      <a href="#/shop?group=pipecleaner" data-nav>Pipe Cleaner</a>
+      <a href="#/shop?group=jewellery" data-nav>Jewellery</a>
+      <a href="#/shop?cat=Gifts" data-nav>Gifts</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" id="searchBtn" type="button" aria-label="Search products" aria-haspopup="dialog">
+        <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+      </button>
+      <a class="icon-btn desktop-only" href="#/account" aria-label="Account">
+        <svg class="icon" aria-hidden="true"><use href="#i-user"/></svg>
+      </a>
+      <a class="icon-btn desktop-only" href="#/wishlist" aria-label="Wishlist">
+        <svg class="icon" aria-hidden="true"><use href="#i-heart"/></svg>
+        <span class="count-badge" id="wishCount" data-count="0" aria-hidden="true">0</span>
+      </a>
+      <button class="icon-btn" id="cartBtn" type="button" aria-label="Open shopping bag" aria-haspopup="dialog">
+        <svg class="icon" aria-hidden="true"><use href="#i-bag"/></svg>
+        <span class="count-badge" id="cartCount" data-count="0" aria-hidden="true">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+     MOBILE NAVIGATION (slide-in layer)
+     ============================================================ -->
+<div class="layer layer-left" id="mobileNav" role="dialog" aria-modal="true" aria-label="Menu" aria-hidden="true" inert>
+  <div class="layer-head">
+    <img class="logo logo-sm" src="assets/ei8htverse-logo.png" alt="ei8htverse" width="792" height="653">
+    <button class="icon-btn" type="button" data-close-layer aria-label="Close menu"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+  </div>
+  <nav class="mobile-links" aria-label="Mobile">
+    <a href="#/shop" data-nav>Shop all</a>
+    <a href="#/shop?flag=new" data-nav>New Arrivals</a>
+    <a href="#/shop?flag=best" data-nav>Bestsellers</a>
+    <a href="#/shop?cat=Charms" data-nav>Charms</a>
+    <a href="#/shop?cat=Bag%20Charms" data-nav>Bag Charms</a>
+    <a href="#/shop?cat=Phone%20Charms" data-nav>Phone Charms</a>
+    <a href="#/shop?group=pipecleaner" data-nav>Pipe Cleaner Crafts</a>
+    <a href="#/shop?cat=Pipe%20Cleaner%20Keychains" data-nav>Keychains</a>
+    <a href="#/shop?cat=Home%20Decor" data-nav>Home Decor</a>
+    <a href="#/shop?group=jewellery" data-nav>Jewellery</a>
+    <a href="#/shop?cat=Gifts" data-nav>Gifts</a>
+    <hr>
+    <a href="#/account" data-nav>Account</a>
+    <a href="#/wishlist" data-nav>Wishlist</a>
+    <a href="#/story" data-nav>Our Story</a>
+    <a href="#/contact" data-nav>Contact</a>
+  </nav>
+</div>
+
+<!-- ============================================================
+     SEARCH PANEL
+     ============================================================ -->
+<div class="layer layer-top" id="searchPanel" role="dialog" aria-modal="true" aria-label="Search products" aria-hidden="true" inert>
+  <div class="container search-inner">
+    <form id="searchForm" role="search" class="search-form" novalidate>
+      <label class="sr-only" for="searchInput">Search products</label>
+      <svg class="icon search-icon" aria-hidden="true"><use href="#i-search"/></svg>
+      <input id="searchInput" type="search" placeholder="Search keychains, flowers, decor, colours…" autocomplete="off" data-autofocus>
+      <button type="button" class="icon-btn" data-close-layer aria-label="Close search"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </form>
+    <p class="search-count" id="searchCount" aria-live="polite"></p>
+    <div class="search-results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- ============================================================
+     CART DRAWER
+     ============================================================ -->
+<aside class="layer layer-right" id="cartDrawer" role="dialog" aria-modal="true" aria-labelledby="cartTitle" aria-hidden="true" inert>
+  <div class="layer-head">
+    <h2 id="cartTitle" class="layer-title">Your bag</h2>
+    <button class="icon-btn" type="button" data-close-layer aria-label="Close bag" data-autofocus><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+  </div>
+  <div class="cart-body" id="cartBody"></div>
+  <div class="cart-footer" id="cartFooter"></div>
+</aside>
+
+<div class="overlay" id="overlay"></div>
+<div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+
+<!-- ============================================================
+     MAIN CONTENT: every "page" is a <section class="view">.
+     script.js shows one at a time using the URL hash (#/shop etc.)
+     ============================================================ -->
+<main id="main" tabindex="-1">
+
+  <!-- ===================== HOME ===================== -->
+  <section class="view" id="view-home" hidden>
+    <!-- A. Hero -->
+    <div class="hero container">
+      <div class="hero-copy">
+        <img class="hero-logo" src="assets/ei8htverse-logo.png" alt="ei8htverse" width="792" height="653">
+        <p class="eyebrow">Pipe cleaner crafts · Charms · Jewellery</p>
+        <h1 id="heroHeadline">Little details. Your kind of magic.</h1>
+        <p class="lead">Handmade pipe cleaner art, keychains, flowers and home decor, plus phone charms and little jewellery pieces, made to be collected, gifted and loved.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#/shop">Shop the collection</a>
+          <a class="btn btn-ghost" href="#/story">Discover ei8htverse</a>
+        </div>
+      </div>
+      <figure class="hero-art">
+        <img id="heroImage" alt="Illustration of pipe cleaner flowers and a keychain on soft pink" width="600" height="600" fetchpriority="high">
+      </figure>
+    </div>
+
+    <!-- B. Shop by category -->
+    <section class="section container reveal" aria-labelledby="catTitle">
+      <div class="section-head">
+        <p class="eyebrow">Browse</p>
+        <h2 id="catTitle">Shop by category</h2>
+      </div>
+      <div class="category-grid" id="categoryGrid"></div>
+    </section>
+
+    <!-- C. New arrivals -->
+    <section class="section section-tint reveal" aria-labelledby="newTitle">
+      <div class="container">
+        <div class="section-head split">
+          <div><p class="eyebrow">Just in</p><h2 id="newTitle">New arrivals</h2></div>
+          <a class="text-link" href="#/shop?flag=new">View all</a>
+        </div>
+        <div class="product-grid" id="newGrid"></div>
+      </div>
+    </section>
+
+    <!-- D. Bestsellers -->
+    <section class="section container reveal" aria-labelledby="bestTitle">
+      <div class="section-head split">
+        <div><p class="eyebrow">Loved most</p><h2 id="bestTitle">Bestsellers</h2></div>
+        <a class="text-link" href="#/shop?flag=best">View all</a>
+      </div>
+      <div class="product-grid" id="bestGrid"></div>
+    </section>
+
+    <!-- E. Featured collection -->
+    <section class="section section-tint reveal" id="collectionSection" aria-labelledby="collTitle">
+      <div class="container" id="collectionFeature"></div>
+    </section>
+
+    <!-- F. Brand statement -->
+    <section class="section container statement reveal" aria-labelledby="statementTitle">
+      <p class="eyebrow">The ei8htverse way</p>
+      <h2 id="statementTitle">Small things, worn with intention.</h2>
+      <p>A fluffy flower that never wilts. A tiny bear on your keys. A rainbow for your wall. ei8htverse is about handmade details that make a space, a bag or a day feel like yours: soft, playful and a little bit luxurious.</p>
+    </section>
+
+    <!-- G. Gifting -->
+    <section class="section section-tint reveal" aria-labelledby="giftTitle">
+      <div class="container">
+        <div class="section-head split">
+          <div><p class="eyebrow">For someone special</p><h2 id="giftTitle">Giftable picks</h2></div>
+          <a class="text-link" href="#/shop?cat=Gifts">View gifts</a>
+        </div>
+        <div class="product-grid" id="giftGrid"></div>
+      </div>
+    </section>
+
+    <!-- H. Instagram -->
+    <section class="section container reveal" aria-labelledby="instaTitle">
+      <div class="section-head center">
+        <p class="eyebrow">Follow along</p>
+        <h2 id="instaTitle">On Instagram</h2>
+        <p class="muted">Placeholder tiles shown below. Swap them for your own photos. They are not live Instagram posts.</p>
+      </div>
+      <div class="insta-grid" id="instaGrid"></div>
+      <div class="center-row">
+        <a class="btn btn-ghost" id="instaLink" href="#" target="_blank" rel="noopener noreferrer">
+          <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg> Follow on Instagram
+        </a>
+      </div>
+    </section>
+
+    <!-- I. Newsletter -->
+    <section class="section container reveal" aria-labelledby="newsTitle">
+      <div class="newsletter">
+        <h2 id="newsTitle">Join the ei8htverse list</h2>
+        <p>Be first to hear about new drops. </p>
+        <form id="newsletterForm" class="inline-form" novalidate>
+          <label class="sr-only" for="newsletterEmail">Email address</label>
+          <input id="newsletterEmail" type="email" placeholder="you@example.com" autocomplete="email" aria-describedby="newsletterMsg">
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <p class="form-msg" id="newsletterMsg" role="status"></p>
+      </div>
+    </section>
+  </section>
+
+  <!-- ===================== SHOP ===================== -->
+  <section class="view" id="view-shop" hidden>
+    <div class="container">
+      <header class="page-head">
+        <h1 id="shopTitle">Shop all</h1>
+        <p class="muted" id="shopCount" aria-live="polite"></p>
+      </header>
+
+      <div class="shop-toolbar">
+        <div class="shop-search" role="search">
+          <label class="sr-only" for="shopSearch">Search products</label>
+          <svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>
+          <input id="shopSearch" type="search" placeholder="Search by name, category, colour or tag" autocomplete="off">
+          <button type="button" class="icon-btn small" id="shopSearchClear" aria-label="Clear search" hidden><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+        </div>
+        <div class="sort-wrap">
+          <label for="sortSelect">Sort</label>
+          <select id="sortSelect">
+            <option value="newest">Newest</option>
+            <option value="price-asc">Price: low to high</option>
+            <option value="price-desc">Price: high to low</option>
+            <option value="best">Bestsellers</option>
+          </select>
+        </div>
+        <button class="btn btn-ghost filter-toggle" id="filterToggle" type="button" aria-expanded="false" aria-controls="filtersPanel">
+          <svg class="icon" aria-hidden="true"><use href="#i-filter"/></svg> Filters
+        </button>
+      </div>
+
+      <div class="shop-layout">
+        <aside class="filters" id="filtersPanel" aria-label="Filters">
+          <div class="field">
+            <label for="fCategory">Category</label>
+            <select id="fCategory"><option value="">All categories</option></select>
+          </div>
+          <fieldset class="field">
+            <legend>Colour</legend>
+            <div class="chip-row" id="fColors"></div>
+          </fieldset>
+          <div class="field">
+            <label for="fAvail">Availability</label>
+            <select id="fAvail">
+              <option value="">All</option>
+              <option value="in">In stock</option>
+              <option value="out">Out of stock</option>
+            </select>
+          </div>
+          <fieldset class="field">
+            <legend>Price range (₹)</legend>
+            <div class="price-inputs">
+              <label class="sr-only" for="fMin">Minimum price</label>
+              <input id="fMin" type="number" min="0" inputmode="numeric" placeholder="Min">
+              <span aria-hidden="true">–</span>
+              <label class="sr-only" for="fMax">Maximum price</label>
+              <input id="fMax" type="number" min="0" inputmode="numeric" placeholder="Max">
+            </div>
+          </fieldset>
+          <button class="btn btn-ghost block" id="fClear" type="button">Clear all filters</button>
+        </aside>
+
+        <div class="shop-results">
+          <div class="product-grid" id="shopGrid"></div>
+          <div class="empty-state" id="shopEmpty" hidden>
+            <h2>Nothing found</h2>
+            <p>We couldn't find a match. Try a different word, or loosen the filters.</p>
+            <button class="btn btn-primary" id="shopEmptyClear" type="button">Clear all filters</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCT DETAIL (built by script.js) ===================== -->
+  <section class="view" id="view-product" hidden>
+    <div class="container" id="productRoot"></div>
+  </section>
+
+  <!-- ===================== WISHLIST ===================== -->
+  <section class="view" id="view-wishlist" hidden>
+    <div class="container narrow" id="wishlistRoot"></div>
+  </section>
+
+  <!-- ===================== ACCOUNT ===================== -->
+  <section class="view" id="view-account" hidden>
+    <div class="container narrow" id="accountRoot"></div>
+  </section>
+
+  <!-- ===================== CHECKOUT ===================== -->
+  <section class="view" id="view-checkout" hidden>
+    <div class="container" id="checkoutRoot"></div>
+  </section>
+
+  <!-- ===================== ADMIN (prototype) ===================== -->
+  <section class="view" id="view-admin" hidden>
+    <div class="container narrow">
+
+      <!-- Login -->
+      <div id="adminLoginPanel" class="panel">
+        <h1>Admin sign in</h1>
+        <p class="notice">Sign in with the admin email and password you created in Supabase (Authentication → Users). Only you can add, edit or delete products.</p>
+        <p class="form-error-box" id="adminDeniedMsg" role="alert" hidden>Access denied. Please sign in as an administrator to continue.</p>
+        <form id="adminLoginForm" class="form-stack" novalidate>
+          <div class="field">
+            <label for="adminUser">Admin email</label>
+            <input id="adminUser" type="email" autocomplete="username" autocapitalize="none" spellcheck="false">
+          </div>
+          <div class="field">
+            <label for="adminPass">Password</label>
+            <div class="input-with-btn">
+              <input id="adminPass" type="password" autocomplete="current-password">
+              <button type="button" class="icon-btn small" id="adminPassToggle" aria-label="Show password" aria-pressed="false"><svg class="icon" aria-hidden="true"><use href="#i-eye"/></svg></button>
+            </div>
+          </div>
+          <p class="field-error" id="adminLoginError" role="alert"></p>
+          <button class="btn btn-primary" type="submit">Sign in</button>
+        </form>
+      </div>
+
+      <!-- Dashboard -->
+      <div id="adminDash" hidden>
+        <div class="split-row">
+          <h1>Admin dashboard</h1>
+          <button class="btn btn-ghost" id="adminLogout" type="button">Log out</button>
+        </div>
+        <p class="notice">Products you add, edit or delete here are saved online in your Supabase database, so every visitor sees the changes.</p>
+
+        <div class="stats">
+          <div class="stat"><span class="stat-num" id="statTotal">0</span><span>Configured products</span></div>
+          <div class="stat"><span class="stat-num" id="statIn">0</span><span>In stock</span></div>
+          <div class="stat"><span class="stat-num" id="statOut">0</span><span>Out of stock</span></div>
+        </div>
+
+        <div class="panel">
+          <div class="split-row">
+            <h2>Products</h2>
+            <div class="btn-row">
+              <button class="btn btn-ghost" id="adminReset" type="button">Add starter products</button>
+              <button class="btn btn-primary" id="adminAdd" type="button"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg> Add product</button>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table class="admin-table">
+              <caption class="sr-only">Product management</caption>
+              <thead>
+                <tr>
+                  <th scope="col">Image</th><th scope="col">Title</th><th scope="col">Category</th>
+                  <th scope="col">Selling</th><th scope="col">Original</th><th scope="col">Stock</th>
+                  <th scope="col">Status</th><th scope="col">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="adminTableBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="split-row">
+            <h2>Orders <span id="orderCount" class="muted"></span></h2>
+            <button class="btn btn-ghost small" id="ordersRefresh" type="button">Refresh</button>
+          </div>
+          <p class="muted" id="ordersNote"></p>
+          <div id="ordersList"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== STATIC PAGES ===================== -->
+  <section class="view" id="view-story" hidden>
+    <div class="container prose">
+      <h1>Our story</h1>
+      <p>ei8htverse began with a love for small, pretty things made by hand. Today we focus on pipe cleaner arts and crafts: flowers, keychains, wall art and home decor, along with phone charms and a few jewellery pieces.</p>
+      <p>Our pieces feel soft, a little dreamy and quietly premium. Most can be made in your favourite colours, so tell us what you have in mind when we chat on WhatsApp.</p>
+      <p class="notice">Template copy: replace this page with your real brand story before launch.</p>
+      <a class="btn btn-primary" href="#/shop">Shop the collection</a>
+    </div>
+  </section>
+
+  <section class="view" id="view-contact" hidden>
+    <div class="container prose">
+      <h1>Contact us</h1>
+      <p>Questions about an order or a product? Write to us at <a data-config-mailto="contactEmail"><span data-config="contactEmail"></span></a>.</p>
+      <p class="notice">Write your message below and we will reply by email.</p>
+      <form id="contactForm" class="form-stack" novalidate>
+        <div class="field"><label for="cName">Your name</label><input id="cName" type="text" autocomplete="name" maxlength="80"><p class="field-error" id="err-cName" role="alert"></p></div>
+        <div class="field"><label for="cEmail">Your email</label><input id="cEmail" type="email" autocomplete="email" maxlength="120"><p class="field-error" id="err-cEmail" role="alert"></p></div>
+        <div class="field"><label for="cMsg">Message</label><textarea id="cMsg" rows="5" maxlength="1000"></textarea><p class="field-error" id="err-cMsg" role="alert"></p></div>
+        <button class="btn btn-primary" type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="view" id="view-shipping" hidden>
+    <div class="container prose">
+      <h1>Shipping policy</h1>
+      <p class="notice">Template: edit every line below to match your real shipping arrangements before launch.</p>
+      <h2>Processing</h2>
+      <p>Orders are prepared once we have confirmed the details and payment with you on WhatsApp. [Add your handling time here.]</p>
+      <h2>Delivery</h2>
+      <p>We ship across India through [your courier partner]. Delivery estimates and charges are shown at checkout. [Add your delivery estimate here.]</p>
+      <h2>Tracking</h2>
+      <p>When your order ships, tracking details will be shared using the email or phone number you provide at checkout. [Confirm how you will send these.]</p>
+      <h2>Questions</h2>
+      <p>Write to <span data-config="contactEmail"></span>.</p>
+    </div>
+  </section>
+
+  <section class="view" id="view-returns" hidden>
+    <div class="container prose">
+      <h1>Returns and refunds</h1>
+      <p class="notice">Template: edit this policy so it matches what you will genuinely offer.</p>
+      <h2>Return window</h2>
+      <p>If there is a problem with your order, contact us within <strong data-config="returns.windowDays"></strong> days of delivery. [Adjust in CONFIG.returns.windowDays.]</p>
+      <h2>Condition</h2>
+      <p>Items should be unused and in original packaging. [Add any exceptions, such as custom-made orders.]</p>
+      <h2>Refunds</h2>
+      <p>Approved refunds are returned to the original payment method. [Add your processing time.]</p>
+      <h2>Damaged items</h2>
+      <p>See <a href="#/damaged">Damaged product reporting</a>.</p>
+    </div>
+  </section>
+
+  <section class="view" id="view-care" hidden>
+    <div class="container prose">
+      <h1>Care guide</h1>
+      <p>General guidance for our handmade crafts, charms and jewellery. Always follow any care notes listed on a specific product.</p>
+      <ul>
+        <li>Put jewellery on after perfume, lotion, hairspray and make-up.</li>
+        <li>Remove it before swimming, bathing, workouts and sleep unless the product page says otherwise.</li>
+        <li>Wipe gently with a soft, dry cloth after wearing.</li>
+        <li>Store pieces separately in a dry pouch or box to avoid scratches and tangles.</li>
+        <li>Keep away from harsh chemicals, strong heat and damp places.</li>
+        <li>Handle charms, clasps and chains gently; avoid pulling or bending them roughly.</li>
+        <li>Pipe cleaner crafts are delicate: keep them away from water, heat and direct sun, handle gently and dust with a soft, dry brush.</li>
+      </ul>
+      <p class="notice">This guide is general advice. Add verified material and finish details per product in the admin panel.</p>
+    </div>
+  </section>
+
+  <section class="view" id="view-damaged" hidden>
+    <div class="container prose">
+      <h1>Damaged product reporting</h1>
+      <p>Received something damaged? We're sorry. Tell us the order number and what happened, and attach photos in your email.</p>
+      <p class="notice">Tell us what happened and we will get back to you. You can send photos when we reply.</p>
+      <form id="damagedForm" class="form-stack" novalidate>
+        <div class="field"><label for="dOrder">Order number</label><input id="dOrder" type="text" maxlength="40"><p class="field-error" id="err-dOrder" role="alert"></p></div>
+        <div class="field"><label for="dEmail">Your email</label><input id="dEmail" type="email" autocomplete="email" maxlength="120"><p class="field-error" id="err-dEmail" role="alert"></p></div>
+        <div class="field"><label for="dMsg">What happened?</label><textarea id="dMsg" rows="5" maxlength="1000"></textarea><p class="field-error" id="err-dMsg" role="alert"></p></div>
+        <button class="btn btn-primary" type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="view" id="view-faqs" hidden>
+    <div class="container prose">
+      <h1>Frequently asked questions</h1>
+      <div class="accordion" id="faqList"></div>
+    </div>
+  </section>
+
+  <section class="view" id="view-privacy" hidden>
+    <div class="container prose">
+      <h1>Privacy policy</h1>
+      <p class="notice">Template only, not legal advice. Have your final policy reviewed before launch.</p>
+      <h2>What we collect</h2>
+      <p>When you order or contact us we may collect your name, email, phone number and delivery address so we can fulfil your order and respond to you.</p>
+      <h2>Payments</h2>
+      <p>Payment is arranged with you directly on WhatsApp. Please never share card PINs, UPI PINs, banking passwords or OTPs with anyone, including us.</p>
+      <h2>Your choices</h2>
+      <p>We use your name, phone number and delivery address only to deliver your order and chat with you about it.</p>
+      <p>You can ask us to correct or delete your information by writing to <span data-config="contactEmail"></span>.</p>
+      <h2>Browser storage</h2>
+      <p>This prototype stores your bag and wishlist in your browser's local storage so they survive a refresh.</p>
+    </div>
+  </section>
+
+  <section class="view" id="view-terms" hidden>
+    <div class="container prose">
+      <h1>Terms and conditions</h1>
+      <p class="notice">Template only, not legal advice. Have your final terms reviewed before launch.</p>
+      <h2>Orders</h2>
+      <p>Orders on <span data-config="brandName"></span> are placed on this website and confirmed with you on WhatsApp, where we also share payment details. An order is confirmed once we have confirmed availability and received payment.</p>
+      <h2>Pricing</h2>
+      <p>Prices are shown in Indian rupees. We may correct pricing errors and will tell you before processing an affected order.</p>
+      <h2>Products</h2>
+      <p>Colours may vary slightly between screens. [Add any further product disclaimers.]</p>
+      <h2>Contact</h2>
+      <p>Questions about these terms? Write to <span data-config="contactEmail"></span>.</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img class="logo" src="assets/ei8htverse-logo.png" alt="ei8htverse" width="792" height="653">
+      <p>Little details. Your kind of magic.</p>
+      <a class="text-link" id="footerInsta" href="#" target="_blank" rel="noopener noreferrer">
+        <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg> Instagram
+      </a>
+    </div>
+    <nav aria-label="Shop links">
+      <h2 class="footer-title">Shop</h2>
+      <a href="#/shop">All products</a>
+      <a href="#/shop?flag=new">New arrivals</a>
+      <a href="#/shop?flag=best">Bestsellers</a>
+      <a href="#/shop?cat=Charms">Charms</a>
+      <a href="#/shop?group=pipecleaner">Pipe cleaner crafts</a>
+      <a href="#/shop?cat=Home%20Decor">Home decor</a>
+      <a href="#/shop?group=jewellery">Jewellery</a>
+      <a href="#/shop?cat=Gifts">Gifts</a>
+    </nav>
+    <nav aria-label="Company links">
+      <h2 class="footer-title">ei8htverse</h2>
+      <a href="#/story">Our story</a>
+      <a href="#/contact">Contact</a>
+      <a href="#/shipping">Shipping policy</a>
+      <a href="#/returns">Returns and refunds</a>
+      <a href="#/care">Jewellery care guide</a>
+      <a href="#/faqs">FAQs</a>
+      <a href="#/privacy">Privacy policy</a>
+      <a href="#/terms">Terms and conditions</a>
+    </nav>
+    <div>
+      <h2 class="footer-title">Newsletter</h2>
+      <p>New drops, straight to your inbox.</p>
+      <a class="btn btn-ghost" href="#/" id="footerNews">Subscribe on the homepage</a>
+    </div>
+  </div>
+  <div class="container footer-base">
+    <p>© <span id="year"></span> <span data-config="brandName"></span>. All rights reserved.</p>
+    <a class="admin-link" href="#/admin" rel="nofollow">Admin</a>
+  </div>
+</footer>
+
+<!-- ============================================================
+     DIALOGS (native <dialog> = accessible focus handling)
+     ============================================================ -->
+<dialog id="confirmDialog" class="dialog" aria-labelledby="confirmTitle">
+  <h2 id="confirmTitle">Please confirm</h2>
+  <p id="confirmText"></p>
+  <div class="btn-row end">
+    <button class="btn btn-ghost" id="confirmNo" type="button">Cancel</button>
+    <button class="btn btn-primary" id="confirmYes" type="button">Confirm</button>
+  </div>
+</dialog>
+
+<!-- Add / edit product -->
+<dialog id="productDialog" class="dialog dialog-xl" aria-labelledby="productFormTitle">
+  <form id="productForm" novalidate>
+    <div class="split-row">
+      <h2 id="productFormTitle">Add product</h2>
+      <button class="icon-btn" type="button" id="pCancelTop" aria-label="Close form"><svg class="icon" aria-hidden="true"><use href="#i-close"/></svg></button>
+    </div>
+
+    <div class="form-grid">
+      <div class="field span-2"><label for="pTitle">Product title *</label><input id="pTitle" type="text" maxlength="80"><p class="field-error" id="err-pTitle" role="alert"></p></div>
+      <div class="field span-2"><label for="pSubtitle">Subtitle</label><input id="pSubtitle" type="text" maxlength="120"><p class="field-error" id="err-pSubtitle" role="alert"></p></div>
+      <div class="field span-2"><label for="pDesc">Description *</label><textarea id="pDesc" rows="4" maxlength="1500"></textarea><p class="field-error" id="err-pDesc" role="alert"></p></div>
+
+      <div class="field"><label for="pCategory">Category *</label><select id="pCategory"></select><p class="field-error" id="err-pCategory" role="alert"></p></div>
+      <div class="field"><label for="pCollection">Collection</label><input id="pCollection" type="text" maxlength="60" placeholder="e.g. Soft Romance"><p class="field-error" id="err-pCollection" role="alert"></p></div>
+
+      <div class="field"><label for="pSku">SKU *</label><input id="pSku" type="text" maxlength="30" autocapitalize="characters"><p class="field-error" id="err-pSku" role="alert"></p></div>
+      <div class="field"><label for="pStock">Stock quantity *</label><input id="pStock" type="number" min="0" step="1" inputmode="numeric"><p class="field-error" id="err-pStock" role="alert"></p></div>
+
+      <div class="field"><label for="pPrice">Selling price (₹) *</label><input id="pPrice" type="number" min="0" step="0.01" inputmode="decimal"><p class="field-error" id="err-pPrice" role="alert"></p></div>
+      <div class="field"><label for="pOriginal">Original price (₹)</label><input id="pOriginal" type="number" min="0" step="0.01" inputmode="decimal"><p class="hint">Optional. Fill only when higher than the selling price, to show a genuine saving.</p><p class="field-error" id="err-pOriginal" role="alert"></p></div>
+
+      <fieldset class="field span-2">
+        <legend>Product images * (up to 4)</legend>
+        <p class="hint">JPG, PNG or WebP, up to 5 MB each. Images are resized and kept in this browser only. For a live shop, host images online and save their URLs.</p>
+        <div class="image-slots" id="imageSlots"></div>
+        <p class="field-error" id="err-pImages" role="alert"></p>
+      </fieldset>
+
+      <fieldset class="field span-2">
+        <legend>Colour variants</legend>
+        <p class="hint">Pick a colour visually, name it, and optionally link it to one of the images above.</p>
+        <div class="color-rows" id="colorRows"></div>
+        <button class="btn btn-ghost" type="button" id="addColor"><svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg> Add colour</button>
+        <p class="field-error" id="err-pColors" role="alert"></p>
+      </fieldset>
+
+      <div class="field"><label for="pMaterial">Material</label><input id="pMaterial" type="text" maxlength="120"><p class="hint">Only enter details you have verified.</p><p class="field-error" id="err-pMaterial" role="alert"></p></div>
+      <div class="field"><label for="pDimensions">Dimensions</label><input id="pDimensions" type="text" maxlength="120" placeholder="e.g. 4 cm × 3 cm"><p class="field-error" id="err-pDimensions" role="alert"></p></div>
+
+      <div class="field span-2"><label for="pCare">Care instructions</label><textarea id="pCare" rows="2" maxlength="400"></textarea><p class="field-error" id="err-pCare" role="alert"></p></div>
+
+      <div class="field span-2"><label for="pTags">Tags</label><input id="pTags" type="text" maxlength="200" placeholder="comma, separated, tags"><p class="hint">Tags help customers find this product in search.</p></div>
+      <div class="field span-2"><label for="pVariants">Optional variants</label><textarea id="pVariants" rows="2" maxlength="300" placeholder="Size: 6, 7, 8"></textarea><p class="hint">One per line as <em>Name: option, option</em>. Leave empty if not needed.</p><p class="field-error" id="err-pVariants" role="alert"></p></div>
+
+      <div class="field"><label for="pAvail">Availability *</label>
+        <select id="pAvail"><option value="available">Available</option><option value="sold_out">Marked as sold out</option></select>
+      </div>
+
+      <fieldset class="field toggles">
+        <legend>Show in</legend>
+        <label class="toggle"><input type="checkbox" id="pFeatured"> <span>Featured</span></label>
+        <label class="toggle"><input type="checkbox" id="pBest"> <span>Bestseller</span></label>
+        <label class="toggle"><input type="checkbox" id="pNew"> <span>New arrival</span></label>
+      </fieldset>
+    </div>
+
+    <p class="form-error-box" id="productFormError" role="alert" hidden></p>
+    <div class="btn-row end">
+      <button class="btn btn-ghost" type="button" id="pCancel">Cancel</button>
+      <button class="btn btn-primary" type="submit" id="pSave">Save product</button>
+    </div>
+  </form>
+</dialog>
+
+<noscript><p style="padding:1rem;text-align:center">ei8htverse needs JavaScript to show products and the shopping bag.</p></noscript>
+
+<script src="script.js"></script>
+<script>
+  /* If script.js did not load or crashed, tell the user instead of showing a dead page */
+  window.addEventListener('load', function () {
+    if (!window.EI8_READY) {
+      var d = document.createElement('div');
+      d.setAttribute('role', 'alert');
+      d.style.cssText = 'position:fixed;inset:auto 0 0 0;z-index:999;background:#7A2749;color:#FFF7FA;padding:14px 16px;font:14px/1.4 sans-serif;text-align:center';
+      d.textContent = 'The shop could not start. Make sure index.html, style.css, script.js and the assets folder are all in the same folder, then open index.html with Live Server (or use ei8htverse-standalone.html).';
+      document.body.appendChild(d);
+    }
+  });
+</script>
+</body>
+</html>
